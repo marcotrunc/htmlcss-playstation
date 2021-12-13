@@ -11,9 +11,7 @@
 .row{
     border: 1px dashed black;
 }
-#sony-bar{
-    height: 30px;
-}
+
 #main-header{
     height: 70px;
 }
@@ -45,4 +43,8 @@
     #psfive-figure .row{
         justify-content: space-between;
     }
+}
+/* Color */
+.bg-black{
+    background-color: #000;
 }
