@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>playstation</title>
 </head>
@@ -13,15 +14,70 @@
         <section class="container-fluid">
             <!-- Top-Header -->
             <div id="sony-bar" class="row bg-black justify-content-end">
-                <div class="col-1 px-0">
-                    <img src="img/sony_logo.svg" alt="">
+                <div class="col-1">
+                    <img src="img/sony_logo.svg" class="" alt="">
                 </div>
             </div>
             <!-- Bottom-Header -->
-            <div class="row">
-                <div id="main-header" class="col-12"></div>
-            </div>
-        </section>   
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">
+                      <img src="img/play_logo.svg" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">
+                              Giochi
+                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                          </a>                         
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Hardware
+                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                        </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#">
+                            Servizi
+                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active">
+                            Fai acquisti
+                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active">
+                            Supporto
+                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                My PlayStation
+                                <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                            </a>
+                        </li>
+                        <li id="button-header" class="nav-item">
+                            <a class="nav-link active button-custom bg-light-black text-light" href="#">Accedi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>            
+              </nav>
+        </section>    
     </header>
     <!-- Topper-Jumbotron -->
     <section id="jumbotron">
@@ -170,7 +226,7 @@
     </section>
     <!-- Social -->
     <section id="social">
-        <div class="continer">
+        <div class="container">
             <div class="row text-center">
                 <div class="col-12"></div>
                 <div class="col-6 col-sm-3 "></div>

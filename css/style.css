@@ -1,3 +1,6 @@
+body{
+    font-weight: 500;
+}
 /* TO DO REMOVE */
 .container-fluid{
     border: 1px dashed red;
@@ -12,9 +15,7 @@
     border: 1px dashed black;
 }
 
-#main-header{
-    height: 70px;
-}
+
 #jumbotron, #jumbotron-bottom{
     border: 1px dashed red;
     height: 500px;
@@ -44,7 +45,25 @@
         justify-content: space-between;
     }
 }
+/* Utilities */
+.button-custom{
+    border-radius: 20px;
+    font-weight: bold;
+}
+.chevron-down{
+    width: 8px;
+}
+/* Header */
+
+#main-header .bi-list{
+    font-size: 24px;
+    border: 1px solid ;
+}
+
 /* Color */
 .bg-black{
     background-color: #000;
+}
+.bg-light-black{
+    background-color: #363636;
 }
