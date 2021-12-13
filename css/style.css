@@ -16,25 +16,6 @@ body{
 }
 
 
-#jumbotron, #jumbotron-bottom{
-    border: 1px dashed red;
-    height: 500px;
-}
-#jumbotron .container,
-#jumbotron-bottom .container{
-    position: relative;
-    height: 500px;
-}
-
-#jumbotron .col-12,
-#jumbotron-bottom .col-12{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-#games .col-6{
-    height: 150px;
-}
 #psfive-figure .col{
     min-width: 150px;
     flex-grow: 0;
@@ -49,21 +30,81 @@ body{
 .button-custom{
     border-radius: 20px;
     font-weight: bold;
+    text-decoration: none;
+}
+.rounded-6rem{
+    border-radius:0.6rem;
 }
 .chevron-down{
     width: 8px;
 }
+.f-size-10{
+    font-size: 10px;
+}
+.f-size-15{
+    font-size: 15px;
+    
+}
+.f-size-18{
+ font-size: 18px;
+}
+.f-size-20{
+    font-size: 20px;;
+}
+.f-size-0-95{
+    font-size: 0.95rem;
+}
+
 /* Header */
 
 #main-header .bi-list{
     font-size: 24px;
     border: 1px solid ;
 }
+/* Jumbo */
+#jumbotron{
+    padding-top: 90px;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    background-image: url(../img/jumbo-bg.png); 
+    background-position: center; 
+    background-size: cover;
+}
+#jumbotron .container{
+    position: absolute;
+    bottom: 25px;
+}
 
+
+/* jumbotron-bottom */
+#jumbotron-bottom{
+   position: relative;
+   
+}
+#jumbotron-bottom .container{
+    position: absolute;
+    top:30px;
+}
+.takes-two-banner-img{
+    height: 450px;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+}
 /* Color */
 .bg-black{
     background-color: #000;
 }
 .bg-light-black{
     background-color: #363636;
+}
+.bg-orange{
+    background-color:#cd3d0f;
+}
+.bg-grey{
+    background-color: #C1BDBC;
+}
+.bg-light-grey{
+    background-color: #d9dadc;
 }
