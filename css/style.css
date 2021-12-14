@@ -58,8 +58,7 @@ header{
 
 /* Jumbo */
 #jumbotron{
-    width: 100vw;
-    height: 400px;
+    height: 75vh;
     position: relative;
     background-image: url(../img/jumbo-bg.png); 
     background-position: center; 
