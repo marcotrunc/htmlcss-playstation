@@ -2,13 +2,6 @@ body{
     font-weight: 500;
     padding-top: 90px;
 }
-
-#psfive-figure .col{
-    border: 1px solid chocolate;
-    flex-shrink: 0;
-    flex-grow: 0;
-}
-
 /* Utilities */
 .w-100px{
     width: 100px;
@@ -58,32 +51,31 @@ header{
 
 /* Jumbo */
 #jumbotron{
-    height: 75vh;
-    position: relative;
+    height: 70vh;
     background-image: url(../img/jumbo-bg.png); 
     background-position: center; 
     background-size: cover;
 }
-#jumbotron .container{
+
+#jumbotron .abs{
     position: absolute;
-    bottom: 25px;
+    bottom: 25vh;
 }
 
 
 /* jumbotron-bottom */
-#jumbotron-bottom{
-   position: relative;
-   
-}
 #jumbotron-bottom .container{
-    position: absolute;
-    top:30px;
+    position: relative;
 }
-.takes-two-banner-img{
-    height: 450px;
-    width: 100%;
-    object-fit:cover;
-    object-position: center;
+#jumbotron-bottom{
+    height: 75vh;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg); 
+    background-position: center; 
+    background-size: cover;
+}
+#jumbotron-bottom .abs-bottom{
+    position: absolute;
+    top:0;
 }
 /* Color */
 .bg-black{
