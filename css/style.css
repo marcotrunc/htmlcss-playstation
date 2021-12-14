@@ -1,31 +1,13 @@
 body{
     font-weight: 500;
+    padding-top: 90px;
 }
-/* TO DO REMOVE */
-.container-fluid{
-    border: 1px dashed red;
-}
-.container{
-    border: 1px dashed yellow;
-}
-[class^=col]{
-    border: 1px dashed green;
-}
-.row{
-    border: 1px dashed black;
-}
-
 
 #psfive-figure .col{
     min-width: 150px;
     flex-grow: 0;
 }
 
-@media screen and (min-width: 768px){
-    #psfive-figure .row{
-        justify-content: space-between;
-    }
-}
 /* Utilities */
 .button-custom{
     border-radius: 20px;
@@ -51,11 +33,25 @@ body{
 .f-size-20{
     font-size: 20px;;
 }
+.f-size-0-85{
+    font-size: 0.85rem;
+}
 .f-size-0-95{
     font-size: 0.95rem;
 }
-
+.list-style-type{
+    list-style-type: none;
+}
 /* Header */
+header{
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
+    --bs-bg-opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
 
 #main-header .bi-list{
     font-size: 24px;
@@ -63,7 +59,6 @@ body{
 }
 /* Jumbo */
 #jumbotron{
-    padding-top: 90px;
     width: 100vw;
     height: 400px;
     position: relative;
@@ -110,4 +105,7 @@ body{
 }
 .bg-blue{
     background-color: #161c3b;
+}
+.bg-light-blue{
+    background-color:#00439C;
 }
