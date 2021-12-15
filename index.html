@@ -52,19 +52,59 @@
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active">
-                            Fai acquisti
-                            <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="text-decoration-underline">Fai acquisti</span>
+                          <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
                         </a>
+                        <div class="dropdown-menu w-100">   
+                            <ul class="d-flex justify-content-center align-items-center list-style-none" aria-labelledby="navbarScrollingDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="img/play-menu-ico.png" alt="icon-play">
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-dark">PlayStation 5</a>
+                                    </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">  
+                                    <img src="img/play-menu-ico.png" alt="icon-play">
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-dark">PlayStation 4</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                    <img src="img/play-menu-ico.png" alt="icon-play">
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-dark">PlayStation 3</a>
+                                </li>
+                            </ul>
+                            <div class="rule"></div>                            
+                            <ul class="d-flex justify-content-center align-items-center list-style-none">
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">
+                                        <i class="fas fa-circle me-2"></i>Link Fai Acquisti
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">
+                                        <i class="fas fa-circle me-2"></i>Link Fai Acquisti
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark" href="#">
+                                        <i class="fas fa-circle me-2"></i>Link Fai Acquisti
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>     
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link active">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active" href="#">
                             Supporto
                             <img src="img/chevron-down-solid.svg" class="chevron-down" alt="">
                         </a>
                       </li>
                     </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
+                    <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 My PlayStation
@@ -72,7 +112,9 @@
                             </a>
                         </li>
                         <li id="button-header" class="nav-item">
-                            <a class="nav-link active button-custom bg-light-black text-light" href="#">Accedi</a>
+                            <a class="nav-link active" href="#">
+                                <span class="button-custom bg-light-black text-light px-3 py-2">Accedi</span>
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="#">
@@ -580,5 +622,6 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
