@@ -1,6 +1,6 @@
 body{
     font-weight: 500;
-    padding-top: 90px;
+    padding-top: 92px;
 }
 /* Utilities */
 .w-100px{
@@ -51,32 +51,20 @@ header{
 
 /* Jumbo */
 #jumbotron{
-    height: 70vh;
     background-image: url(../img/jumbo-bg.png); 
-    background-position: center; 
+}
+    
+.bg-propriety{
+    background-position: top center; 
     background-size: cover;
-}
-
-#jumbotron .abs{
-    position: absolute;
-    bottom: 25vh;
+    padding-top: 230px;
 }
 
 
-/* jumbotron-bottom */
-#jumbotron-bottom .container{
-    position: relative;
-}
 #jumbotron-bottom{
-    height: 75vh;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg); 
-    background-position: center; 
-    background-size: cover;
 }
-#jumbotron-bottom .abs-bottom{
-    position: absolute;
-    top:0;
-}
+
 /* Color */
 .bg-black{
     background-color: #000;
@@ -98,4 +86,43 @@ header{
 }
 .bg-light-blue{
     background-color:#00439C;
+}
+/** HOVER **/
+/* hover sulle a */
+.navbar-light .navbar-nav .nav-link.active{
+    color: grey;
+}
+.navbar-light .navbar-nav .nav-link.active:hover{
+    color: black;
+}
+/* hover su button-custom */
+#button-header .button-custom:hover{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px black;
+}
+.btn-jumbo:hover.button-custom{
+    box-shadow: 0 0 0 2px black, 0 0 0 3px #cd3d0f;
+}
+.btn-primary:hover.button-custom{
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #2d64e6;
+}
+#btn-psplus:hover.button-custom{
+    box-shadow: 0 0 0 2px #2d64e6, 0 0 0 4px #d9dadc;
+}
+#btn-psnow.button-custom:hover{
+    box-shadow: 0 0 0 2px #000, 0 0 0 3px #fff;
+}
+/* animazione sulle img dei giochi */
+#games [class^=col]:hover{
+    animation: transitiony 0.5s ease  1;
+}
+#games img:hover{
+    border: 2px solid #2d64e6;
+}
+@keyframes transitiony {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-15px);
+    }
 }
