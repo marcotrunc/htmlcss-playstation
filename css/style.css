@@ -2,6 +2,7 @@ body{
     font-weight: 500;
     padding-top: 92px;
 }
+
 /* Utilities */
 .w-100px{
     width: 100px;
@@ -64,7 +65,11 @@ header{
 #jumbotron-bottom{
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg); 
 }
-
+/* Footer */
+#ps-footer li a {
+    text-decoration: none;
+    color:white;
+}
 /* Color */
 .bg-black{
     background-color: #000;
@@ -111,6 +116,22 @@ header{
 #btn-psnow.button-custom:hover{
     box-shadow: 0 0 0 2px #000, 0 0 0 3px #fff;
 }
+/* hover opacity */
+#psfive-figure img{
+    opacity: 0.5;
+}
+#psfive-figure img:hover{
+    opacity: 1;
+}
+#psfive-figure figure:hover{
+    border-bottom: 2px solid #2d64e6;
+    border-radius: 20px;
+}
+/* hover sulle img dei saldi */
+#sales img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 30px  red;
+}
 /* animazione sulle img dei giochi */
 #games [class^=col]:hover{
     animation: transitiony 0.5s ease  1;
@@ -125,4 +146,7 @@ header{
     to{
         transform: translateY(-15px);
     }
+}
+img{
+    cursor: pointer;
 }
